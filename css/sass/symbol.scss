@@ -1,13 +1,133 @@
 // symbol.scss
 @import "_common.scss";
 
+@import url('https://webfontworld.github.io/seoulnamsan/SeoulNamsan.css'); /*정체*/
+@font-face {
+    font-family: 'SeoulNamsanC';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCLight.eot');
+    src:url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCLight.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SeoulNamsanC';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCMedium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCMedium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCMedium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCMedium.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SeoulNamsanC';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCBold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SeoulNamsanC';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCExtraBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCExtraBold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SeoulNamsanC';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCBlack.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCBlack.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCBlack.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCBlack.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulnamsan/SeoulNamsanCBlack.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SeoulHangangM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} /*정체*/
+
+@font-face {
+    font-family: 'SeoulHangangC';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCLight.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SeoulHangangC';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCMedium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCMedium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCMedium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCMedium.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SeoulHangangC';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCBold.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SeoulHangangC';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCExtraBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCExtraBold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SeoulHangangC';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCBlack.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCBlack.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCBlack.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCBlack.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangCBlack.ttf') format("truetype");
+    font-display: swap;
+}
+
+
 
 .fontbanner{
     background: url("../img/symbol/menu_3.jpg") 0 0 / cover no-repeat;
 };
 
 .colorbanner{
-    background: url("../img/symbol/menu_2.jpg") 0 0 / cover no-repeat;
+    background: url("../img/symbol/menu_2.jpg") center / cover no-repeat;
 };
 
 .sloganbanner{
@@ -446,6 +566,12 @@ main{
         justify-content: space-between;
         text-align: center;
         gap: 20px;
+        @include res($tablet){
+            gap: 5px;
+        }
+        @include res($mobile){
+            display: block;
+        }
         figure{
             > div{
                 border: 3px solid #fff;
@@ -454,6 +580,9 @@ main{
                     img{
                     width: 100%;
                     height: 450px;
+                    @include res($tablet){
+                        height: 250px;
+                    }
                     object-fit: cover;
                     transition: 1s;
                 }
@@ -478,6 +607,10 @@ main{
     .color_red{
         background: #98212B;
         padding: 40px;
+        @include res($tablet){
+            padding: 20px;
+            margin-bottom: 10px;
+        }
         figcaption{
             color: #ffffff;
             p{
@@ -490,6 +623,9 @@ main{
     .color_gray{
         background: #E4DFE3;
         padding: 40px;
+        @include res($tablet){
+            padding: 20px;
+        }
     }
 }
 
@@ -506,10 +642,18 @@ main{
         justify-content: space-between;
         flex-wrap: wrap;
         padding-top: 100px;
+
         figure{
             width: 19%;
             border: 1px solid #d9d9d9;
             margin-bottom: 15px;
+            @include res($tablet){
+                width: 49%;
+            }
+            @include res($mobile){
+                width: 99%;
+                margin-bottom: 5px;
+            }
             p:nth-of-type(1){
                 img{
                     width: 100%;
@@ -562,6 +706,9 @@ main{
                 background-color: #E0dfdd;
                 font-weight: 300;
                 text-align: center;
+                @include res($mobile){
+                    width: 19%;
+                }
             }
         }
 
@@ -597,15 +744,23 @@ main{
     h4{
         font-size: 1.5rem;
         color:#ccc;
+        @include res($tablet){
+            font-size: 1rem;
+        }
     }
     h5{
         padding: 5px 0;
     }
     > div{
-        width: 90%;
+        width: 100%;
         border-left: 1px solid #d9d9d9;
         padding: 20px 0 0 30px;
         margin-left: 90px;
+        @include res($tablet){
+            margin: 0 auto;
+            padding: 0;
+            border-left: 0px solid #d9d9d9;
+        }
         table{
             width: 100%;
             border-collapse: collapse;
@@ -615,10 +770,16 @@ main{
                 th{
                     padding: 10px 0;
                     background-color: rgb(217, 217, 217,0.5);
+                    @include res($tablet){
+                        padding: 5px 0;
+                    }
                 }
                 td{
                     padding: 20px 40px;
                     text-align: center;
+                    @include res($tablet){
+                        padding: 5px 0;
+                    }
                 }
                 .font_wei{
                     border-right: 1px solid #d9d9d9;
@@ -631,6 +792,93 @@ main{
                     border-right: 1px solid #d9d9d9;
                     border-left: 1px solid #d9d9d9;
                 }
+            .namsan_jung1{
+                font-family: 'SeoulNamsan';
+                font-weight: 300;
+            }
+            .namsan_jung2{
+                font-family: 'SeoulNamsan';
+                font-weight: 500;
+            }
+            .namsan_jung3{
+                font-family: 'SeoulNamsan';
+                font-weight: 700;
+            }
+            .namsan_jung4{
+                font-family: 'SeoulNamsan';
+                font-weight: 800;
+            }
+            .namsan_jung5{
+                font-family: 'SeoulNamsan';
+                font-weight: 900;
+            }
+            .namsan_jang1{
+                font-family: 'SeoulNamsanC';
+                font-weight: 300;
+            }
+            .namsan_jang2{
+                font-family: 'SeoulNamsanC';
+                font-weight: 500;
+            }
+            .namsan_jang3{
+                font-family: 'SeoulNamsanC';
+                font-weight: 700;
+            }
+            .namsan_jang4{
+                font-family: 'SeoulNamsanC';
+                font-weight: 800;
+            }
+            .namsan_jang5{
+                font-family: 'SeoulNamsanC';
+                font-weight: 900;
+            }
+
+            .hanriver_jung1{
+                font-family: 'SeoulHangangM';
+                font-weight: 300;
+            }
+            .hanriver_jung2{
+                font-family: 'SeoulHangangM';
+                font-weight: 500;
+            }
+            .hanriver_jung3{
+                font-family: 'SeoulHangangM';
+                font-weight: 700;
+            }
+            .hanriver_jung4{
+                font-family: 'SeoulHangangM';
+                font-weight: 800;
+            }
+            .hanriver_jung5{
+                font-family: 'SeoulHangangM';
+                font-weight: 900;
+            }
+            .hanriver_jang1{
+                font-family: 'SeoulHangangC';
+                font-weight: 300;
+            }
+            .hanriver_jang2{
+                font-family: 'SeoulHangangC';
+                font-weight: 500;
+            }
+            .hanriver_jang3{
+                font-family: 'SeoulHangangC';
+                font-weight: 700;
+            }
+            .hanriver_jang3{
+                font-family: 'SeoulHangangC';
+                font-weight: 800;
+            }
+            .hanriver_jang4{
+                font-family: 'SeoulHangangC';
+                font-weight: 900;
+            }
+            .hanriver_jang5{
+                font-family: 'SeoulHangangC';
+                font-weight: 1000;
+            }
+
+
             }
         }
 
@@ -646,6 +894,9 @@ main{
                 position: absolute;
                 right: 13%;
                 bottom: 9%;
+                @include res($mobile){
+                    bottom: 3%;
+                }
                 span:nth-of-type(odd){
                     color: rgb(39, 165, 255);
                 }
@@ -654,6 +905,9 @@ main{
 
         .font_namsan3{
             position: relative;
+            @include res($mobile){
+                display: none;
+            }
             > div{
                 padding: 100px 0 50px;
                 margin: 60px 0;
@@ -722,18 +976,26 @@ main{
                 height: 10%;
             }
         }
-
-
-        .font_namsan4{
-            > div{
-                border-top: 1px solid #d9d9d9;
-                padding: 50px 0;
-                img{
-                    width: 100%;
-                }
+        
+        .font_namsan3_480{
+            display: none;
+            @include res($mobile){
+                display: block;
             }
         }
-        
+
+
+
+    }
+
+    .font_namsan4{
+        > div{
+            border-top: 1px solid #d9d9d9;
+            padding: 50px 0;
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -753,6 +1015,10 @@ main{
             position: absolute;
             right: 13%;
             bottom: 7%;
+            @include res($mobile){
+                bottom: 3%;
+            }
+            
             span:nth-of-type(odd){
                 color: rgb(39, 165, 255);
             }
@@ -760,6 +1026,9 @@ main{
     }
     .font_hanriver3{
         position: relative;
+        @include res($mobile){
+            display: none;
+        }
         > div{
             padding: 80px 0 50px;
             margin: 20px 0 40px;
@@ -774,8 +1043,6 @@ main{
             background-color: rgb(204, 204, 204);
             z-index: -1;
         }
-
-
 
 
         p:nth-of-type(1){
@@ -844,6 +1111,13 @@ main{
 
     }
 
+    .font_hanriver3_480{
+        display: none;
+        @include res($mobile){
+            display: block;
+        }
+    }
+
     .font_hanriver4{
         > div{
             border-top: 1px solid #d9d9d9;
@@ -861,9 +1135,15 @@ main{
     border-top: 1px solid #d9d9d9;
     margin: 180px 0;
     padding-top: 5px;
+    @include res($mobile){
+        margin: 30px 0;
+    }
     > p{
         text-align: right;
         padding-bottom: 100px;
+        @include res($mobile){
+        padding-bottom: 50px;
+        }
     }
     div{text-align: center;}
 }
@@ -875,12 +1155,20 @@ main{
     justify-content: space-evenly;
     margin: 50px 0;
     vertical-align: middle;
+    @include res($mobile){
+        display: block;
+        margin: 30px 0;
+        }
     a{
         width: 100%;
         border-right: 1px solid #111;
         padding: 10px 60px;
         margin: 15px 0;
         font-weight: 700;
+        @include res($mobile){
+            border-right: 0px solid #111;
+            padding: 0 5px;
+            }
     }
     a:nth-of-type(3){
         border-right: 1px solid #fff;
@@ -895,10 +1183,21 @@ main{
         display: flex;
         align-items: center;
         padding: 20px 70px;
-        p{}
+        @include res($mobile){
+            display: block;
+            }
+        
+        p{
+            @include res($mobile){
+                font-weight: 600;
+                }
+        }
         span{
             text-align: left;
             margin-left: 70px;
+            @include res($mobile){
+                margin-left: 0;
+                }
         }
     }
     .font_03_02{
