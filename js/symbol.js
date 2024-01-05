@@ -9,7 +9,7 @@ function init(){
     //json 서울대표색 10
 
     let colorBest10 = [];
-    fetch('/data/color.json')
+    fetch('./data/color.json')
 
     .then(obj => obj.json())
 
@@ -54,7 +54,7 @@ function init(){
     //json 서울지역색 50
 
     let colorBest50 = [];
-    fetch('/data/color.json')
+    fetch('./data/color.json')
 
     .then(obj => obj.json())
     .then(data => {
@@ -129,16 +129,16 @@ function init(){
 
     };
 
-    let pageNum = location.pathname.substr(1);
+    let pageNum = location.pathname.substr(location.pathname.lastIndexOf('/'));;
 
             switch(pageNum){
-                case 'sym-color.html' : pageColor();
+                case '/sym-color.html' : pageColor();
                 break;
 
-                case 'sym-font.html' : pageFont();
+                case '/sym-font.html' : pageFont();
                 break;
 
-                case 'sym-slogan.html' : pageSlogan();
+                case '/sym-slogan.html' : pageSlogan();
                 break;
             };
 
