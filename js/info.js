@@ -250,16 +250,16 @@ window.addEventListener('load',function(){
         
     };
 
-    let pageNum = location.pathname.substr(1);
+    let pageNum = location.pathname.substr(location.pathname.lastIndexOf('/'));
 
     switch(pageNum){
-        case 'info-graphy.html' : pageGraphy();
+        case '/info-graphy.html' : pageGraphy();
         break;
 
-        case 'info-story.html' : pageStory();
+        case '/info-story.html' : pageStory();
         break;
 
-        case 'info-static.html' : pageStatic();
+        case '/info-static.html' : pageStatic();
         break;
     };
 
