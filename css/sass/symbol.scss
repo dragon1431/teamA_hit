@@ -569,6 +569,9 @@ main{
         @include res($tablet){
             gap: 5px;
         }
+        @include res($mobile){
+            display: block;
+        }
         figure{
             > div{
                 border: 3px solid #fff;
@@ -579,9 +582,6 @@ main{
                     height: 450px;
                     @include res($tablet){
                         height: 250px;
-                    }
-                    @include res($mobile){
-                        height: 150px;
                     }
                     object-fit: cover;
                     transition: 1s;
@@ -607,6 +607,10 @@ main{
     .color_red{
         background: #98212B;
         padding: 40px;
+        @include res($tablet){
+            padding: 20px;
+            margin-bottom: 10px;
+        }
         figcaption{
             color: #ffffff;
             p{
@@ -619,6 +623,9 @@ main{
     .color_gray{
         background: #E4DFE3;
         padding: 40px;
+        @include res($tablet){
+            padding: 20px;
+        }
     }
 }
 
@@ -635,10 +642,18 @@ main{
         justify-content: space-between;
         flex-wrap: wrap;
         padding-top: 100px;
+
         figure{
             width: 19%;
             border: 1px solid #d9d9d9;
             margin-bottom: 15px;
+            @include res($tablet){
+                width: 49%;
+            }
+            @include res($mobile){
+                width: 99%;
+                margin-bottom: 5px;
+            }
             p:nth-of-type(1){
                 img{
                     width: 100%;
@@ -691,6 +706,9 @@ main{
                 background-color: #E0dfdd;
                 font-weight: 300;
                 text-align: center;
+                @include res($mobile){
+                    width: 19%;
+                }
             }
         }
 
@@ -726,15 +744,23 @@ main{
     h4{
         font-size: 1.5rem;
         color:#ccc;
+        @include res($tablet){
+            font-size: 1rem;
+        }
     }
     h5{
         padding: 5px 0;
     }
     > div{
-        width: 90%;
+        width: 100%;
         border-left: 1px solid #d9d9d9;
         padding: 20px 0 0 30px;
         margin-left: 90px;
+        @include res($tablet){
+            margin: 0 auto;
+            padding: 0;
+            border-left: 0px solid #d9d9d9;
+        }
         table{
             width: 100%;
             border-collapse: collapse;
@@ -744,10 +770,16 @@ main{
                 th{
                     padding: 10px 0;
                     background-color: rgb(217, 217, 217,0.5);
+                    @include res($tablet){
+                        padding: 5px 0;
+                    }
                 }
                 td{
                     padding: 20px 40px;
                     text-align: center;
+                    @include res($tablet){
+                        padding: 5px 0;
+                    }
                 }
                 .font_wei{
                     border-right: 1px solid #d9d9d9;
@@ -862,6 +894,9 @@ main{
                 position: absolute;
                 right: 13%;
                 bottom: 9%;
+                @include res($mobile){
+                    bottom: 3%;
+                }
                 span:nth-of-type(odd){
                     color: rgb(39, 165, 255);
                 }
@@ -870,6 +905,9 @@ main{
 
         .font_namsan3{
             position: relative;
+            @include res($mobile){
+                display: none;
+            }
             > div{
                 padding: 100px 0 50px;
                 margin: 60px 0;
@@ -938,18 +976,26 @@ main{
                 height: 10%;
             }
         }
-
-
-        .font_namsan4{
-            > div{
-                border-top: 1px solid #d9d9d9;
-                padding: 50px 0;
-                img{
-                    width: 100%;
-                }
+        
+        .font_namsan3_480{
+            display: none;
+            @include res($mobile){
+                display: block;
             }
         }
-        
+
+
+
+    }
+
+    .font_namsan4{
+        > div{
+            border-top: 1px solid #d9d9d9;
+            padding: 50px 0;
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -969,6 +1015,10 @@ main{
             position: absolute;
             right: 13%;
             bottom: 7%;
+            @include res($mobile){
+                bottom: 3%;
+            }
+            
             span:nth-of-type(odd){
                 color: rgb(39, 165, 255);
             }
@@ -976,6 +1026,9 @@ main{
     }
     .font_hanriver3{
         position: relative;
+        @include res($mobile){
+            display: none;
+        }
         > div{
             padding: 80px 0 50px;
             margin: 20px 0 40px;
@@ -990,8 +1043,6 @@ main{
             background-color: rgb(204, 204, 204);
             z-index: -1;
         }
-
-
 
 
         p:nth-of-type(1){
@@ -1060,6 +1111,13 @@ main{
 
     }
 
+    .font_hanriver3_480{
+        display: none;
+        @include res($mobile){
+            display: block;
+        }
+    }
+
     .font_hanriver4{
         > div{
             border-top: 1px solid #d9d9d9;
@@ -1077,9 +1135,15 @@ main{
     border-top: 1px solid #d9d9d9;
     margin: 180px 0;
     padding-top: 5px;
+    @include res($mobile){
+        margin: 30px 0;
+    }
     > p{
         text-align: right;
         padding-bottom: 100px;
+        @include res($mobile){
+        padding-bottom: 50px;
+        }
     }
     div{text-align: center;}
 }
@@ -1091,12 +1155,20 @@ main{
     justify-content: space-evenly;
     margin: 50px 0;
     vertical-align: middle;
+    @include res($mobile){
+        display: block;
+        margin: 30px 0;
+        }
     a{
         width: 100%;
         border-right: 1px solid #111;
         padding: 10px 60px;
         margin: 15px 0;
         font-weight: 700;
+        @include res($mobile){
+            border-right: 0px solid #111;
+            padding: 0 5px;
+            }
     }
     a:nth-of-type(3){
         border-right: 1px solid #fff;
@@ -1111,10 +1183,21 @@ main{
         display: flex;
         align-items: center;
         padding: 20px 70px;
-        p{}
+        @include res($mobile){
+            display: block;
+            }
+        
+        p{
+            @include res($mobile){
+                font-weight: 600;
+                }
+        }
         span{
             text-align: left;
             margin-left: 70px;
+            @include res($mobile){
+                margin-left: 0;
+                }
         }
     }
     .font_03_02{
