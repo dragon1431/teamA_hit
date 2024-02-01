@@ -200,25 +200,33 @@ section{
         margin: 16% 0 18% 0;
 
         @include res($tablet){
+            display: block;
             padding: 16px 0;
+            text-align: center;
         };
 
         h2{
             font-size: 1.5rem;
 
             @include res($tablet){
-                font-size: 1rem;
+                font-size: 1.25rem;
+                margin-bottom: 16px;
             };
 
         }
         .intro-line {
             border: 1px solid #d9d9d9;
             width: 1px; height: 86px;
+            @include res($tablet){
+                display: none;
+            };
         }
         .intro-text-box{
             width: 40vw;
             @include res($tablet){
                 font-size: 0.8rem;
+                margin: auto;
+                width: 90%;
             };
         }
     }
