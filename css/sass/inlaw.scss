@@ -18,10 +18,7 @@ body {
     main {
         width: 60%;
         margin: auto;
-        @include res($tablet){
-            width: 90%;
-            margin: auto;
-        }
+        
         .history {
             margin: 157px auto;
             width: 100%;
@@ -350,18 +347,18 @@ body {
             align-items: self-start;
             text-align: center;
             margin-bottom: 100px;
-            @media (max-width:1000px) {
+            @media (max-width:768px) {
                 flex-direction: column;
                 align-items: center;
             }
             .info {
                 width: 30%;
                 word-break: keep-all;
-                @media (max-width:1000px) {
-                    width: 80%;
+                @media (max-width:768px) {
+                    width: 70%;
                 }
                 @media (max-width:480px) {
-                    width: 90%;
+                    width: 100%;
                 }
                 >b {
                     font-weight: 500;
@@ -374,15 +371,12 @@ body {
             .line02 {
                 border-left: 1px solid #d9d9d9;
                 height: 242px;
-                @media (max-width:1200px){
-                    height: 280px;
-                }
-                @media (max-width:1000px) {
+                @media (max-width:768px) {
                     border-left: none;
                     height: auto;
                     border-bottom: 1px solid #d9d9d9;
                     width: 80%;
-                    margin: 8% auto;
+                    margin: 7% auto;
                 }
             }
         }
@@ -424,11 +418,6 @@ body {
                         flex-wrap: wrap;
                         justify-content: center;
                     }
-                    @media (max-width:480px) {
-                        flex-direction: column;
-                        align-items: center;
-                        width: 100%;
-                    }
 
                     >figure {
                         width: 23%;
@@ -436,9 +425,6 @@ body {
                         @media (max-width:768px) {
                             width: 40%;
                             margin: 2%;
-                        }
-                        @media (max-width:480px) {
-                            width: 70%;
                         }
 
                         >img {
@@ -448,7 +434,6 @@ body {
                 }
 
                 .seoul_col {
-                    width: 100%;
                     .color_col {
                         display: flex;
                         flex-wrap: wrap;
@@ -458,9 +443,6 @@ body {
                             margin: 30px 0 0 0;
                             flex-direction: column;
                             align-items: center;
-                        }
-                        @media (max-width:480px) {
-                            width: 100%;
                         }
                         .color01 {
                             display: flex;
@@ -506,17 +488,12 @@ body {
 
                             .color02 {
                                 width: 100%;
+
                                 >div {
                                     @media (max-width:1140px) {
-                                        font-size: 0.75rem;
+                                        font-size: 12px;
                                     }
-                                    @media (max-width:768px) {
-                                        width: 70%;
-                                        margin: 0 auto;
-                                    }
-                                    @media (max-width:480px) {
-                                        margin-right: 0;
-                                    }
+                                
                                     >p {
                                         margin-bottom: 20px;
                                     }
@@ -527,11 +504,6 @@ body {
                                         flex-direction: row;
                                         justify-content: space-between;
                                         align-items: start;
-                                        @media (max-width:480px) {
-                                            flex-direction: column;
-                                            align-items: start;
-                                            width: 100%;
-                                        }
 
                                         .color-a {
                                             display: flex;
@@ -588,9 +560,6 @@ body {
                     @media (max-width:768px) {
                         flex-wrap: wrap;
                     }
-                    @media (max-width:480px) {
-                        font-size: 0.75rem;
-                    }
 
                     .friend {
                         border: 1px solid #ddd;
@@ -609,9 +578,7 @@ body {
                             padding: 20px;
                         }
                         @media (max-width:768px) {
-                            flex-wrap: nowrap;
                             width: 100%;
-                            justify-content: space-around;
                         }
                         
                         >img {
@@ -625,13 +592,6 @@ body {
                         >figcaption {
                             p:nth-child(1) {
                                 font-weight: 600;
-                            }
-                            p:nth-child(3) {
-                                @media (max-width:768px) {
-                                    width: 90%;
-                                    margin: 0 0 0 10px;
-                                    margin-right: 0;
-                                }
                             }
                         }
                     }
@@ -651,9 +611,7 @@ body {
                             padding: 20px;
                         }
                         @media (max-width:768px) {
-                            flex-wrap: nowrap;
                             width: 100%;
-                            justify-content: space-evenly;
                         }
                         
                         >img {
@@ -662,12 +620,23 @@ body {
                                 padding: 0;
                             }
                         }
-                        >figcaption{
-                            @media (max-width:768px) {
-                                width: 80%;
-                                margin: 0 0 0 10px;
-                                margin-right: 0;
-                            }
+                        
+                        >figcaption {
+                            // @media (max-width:1600px) {
+                                //     font-size: 12px;
+                            // }
+
+                            // @media (max-width:1350px) {
+                            //     font-size: 11px;
+                            // }
+
+                            // @media (max-width:1000px) {
+                            //     font-size: 10px;
+                            // }
+
+                            // @media (max-width:768px) {
+                            //     font-size: 8px;
+                            // }
                         }
                     }
 

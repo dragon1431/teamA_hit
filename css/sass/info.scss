@@ -7,10 +7,6 @@
 
 .main {
     width: 60%;
-    
-    @include res($tablet){
-        width: 90%;
-    };
 }
 
 .graph {
@@ -294,10 +290,8 @@ body {
                 white-space: nowrap;
 
                 @include res($tablet){
-                    font-size: 2.5rem;
-                    color: white;
-                    opacity: 1;
-                    transition: 0;
+                    transition: 0.5s;
+                    font-size: 3rem;
                 };
         };
     };

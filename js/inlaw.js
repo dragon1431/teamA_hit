@@ -6,16 +6,16 @@ function init(){
     .then(res=>{
         data = res;  
         
-        let pageNum = location.pathname.substr(location.pathname.lastIndexOf('/'));
+        let pageNum = location.pathname.substr(1);
 
         switch(pageNum){
-            case '/inlaw-brand.html' : pageBrand();
+            case 'inlaw-brand.html' : pageBrand();
             break;
 
-            case '/inlaw-drape.html' : pageDrape();
+            case 'inlaw-drape.html' : pageDrape();
             break;
 
-            case '/inlaw-symb.html' : pageSymb();
+            case 'inlaw-symb.html' : pageSymb();
             break;
         };
 
